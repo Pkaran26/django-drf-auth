@@ -19,5 +19,6 @@ from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.GetCategory.as_view()),
+    path('list/', views.CategoryList.as_view()),
     path('create/', views.CreateCategory.as_view()),
 ]

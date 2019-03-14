@@ -6,3 +6,6 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = '__all__'
         read_only_fields = ['pk']
+
+class CategorySerializer2(serializers.Serializer):
+    name = serializers.CharField(max_length=25)
